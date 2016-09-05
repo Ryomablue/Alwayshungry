@@ -38,8 +38,12 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div class="container-fluid">
-<div class="row-fluid">
+<% if notice.present? %>
+  <p classes="alert alert-info"><%= notice %></p>
+<% end %>
+<% if alert.present? %>
+  <p classes="alert alert-danger"><%= alert %></p>
+<% end %>
 
 <%= yield %>
 
