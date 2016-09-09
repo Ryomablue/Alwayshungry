@@ -21,12 +21,12 @@
 
       function initMap() {
         var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
-
+        console.log(myLatLng);
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
           center: myLatLng
         });
-
+        console.log(map);
         var marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
@@ -36,7 +36,7 @@
     </script>
     
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtQM-WoxGVjSvRT3NkC8Jgl7AtuEymm_0">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtQM-WoxGVjSvRT3NkC8Jgl7AtuEymm_0&callback=initMap">
     </script>
     
     <div id="map"></div>
@@ -52,3 +52,10 @@
     <% end %>
   </div>
 </div>
+
+<div class="clear"></div>
+<%= simple_form_for @comment, url: '#' do |f| %>
+  <%= f.input :message %>
+  <%= f.input :rating %>
+  <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
+<% end %>

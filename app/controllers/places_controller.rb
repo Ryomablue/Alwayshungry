@@ -14,12 +14,13 @@ class PlacesController < ApplicationController
     if @place.valid?
       redirect_to root_path
     else
-      render :new, status: :unprocessable_entitiy
+      render :new, status: :unprocessable_entity
     end
   end
   
   def show
     @place = Place.find(params[:id])
+    @comment = Comment.new
   end
   
   def edit

@@ -4,8 +4,8 @@ class CreateComments < ActiveRecord::Migration
       t.text :message
       t.string :rating
       
-      t.interger :user_id
-      t.interger :place_id
+      t.integer :user_id
+      t.integer :place_id
       t.timestamps
     end
 
