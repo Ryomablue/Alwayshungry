@@ -2,6 +2,5 @@ class Photo < ActiveRecord::Base
   belongs_to :user
   belongs_to :place
   
-  def caption
-  end
+  mount_uploader :picture, PictureUploader
 end
