@@ -20,4 +20,4 @@ Alwayshungry is a Yelp clone app that lets users make a profile, post restaurant
 * Profile page shows which restaurants the user has created, which restaurants the user has commented on, and other stats.
 
 ###### Here's a glimpse of one of my favorite restaurants that I posted on Alwayshungry.
-![alt tag](https://github.com/AlekstheRealist/Alwayshungry/blob/master/app/assets/images/Screen%20Shot%202016-08-17%20at%204.43.23%20PM.png)
+![alt tag](https://github.com/ryomalue/Alwayshungry/blob/master/app/assets/images/amelias.png)
