@@ -1,28 +1,23 @@
-== README
+# Alwayshungry
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Alwayshungry was written in Ruby on Rails framework. 
 
-Things you may want to cover:
+Alwayshungry is a Yelp clone app that lets users make a profile, post restaurants, and comment on other restaurants. You can check it out [here](https://Alwayshungry-aleks-real.herokuapp.com/). Sign up, add some of your favorite restaurants, and discover new ones too!
 
-* Ruby version
+### Features:
+* Google Maps API is integrated to let users see where their restaurant while checking out a restaurant.
 
-* System dependencies
+* Twitter Bootstrap 3 was utilized for CSS and components.
 
-* Configuration
+* Devise is used for user security and forms.
 
-* Database creation
+* Homepage slider that uses carousel to switch between photos.
 
-* Database initialization
+* Users can comment on other restaurant pages.
 
-* How to run the test suite
+* Amazon Web Services (S3) is used for photo storage when users upload photos of their restaurants.
 
-* Services (job queues, cache servers, search engines, etc.)
+* Profile page shows which restaurants the user has created, which restaurants the user has commented on, and other stats.
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+###### Here's a glimpse of one of my favorite restaurants that I posted on Alwayshungry.
+![alt tag](https://github.com/AlekstheRealist/Alwayshungry/blob/master/app/assets/images/Screen%20Shot%202016-08-17%20at%204.43.23%20PM.png)
